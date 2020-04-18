@@ -7,6 +7,11 @@ public class enemyController : MonoBehaviour
 
     GameObject Player;
 
+    public Light MainLight;
+
+
+    List<GameObject> Lights = new List<GameObject>();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,12 +30,22 @@ public class enemyController : MonoBehaviour
     void InLight()
     {
 
+
+
+
     }
 
     void FollowPlayer()
     {
 
+        //edge 
 
+    }
+
+    void GoToBed()
+    {
+
+        //if ML < 20% go here
 
     }
 }
