@@ -5,7 +5,7 @@ using UnityEngine;
 public class enemyBarkScript : MonoBehaviour
 {
     public string[] enemyBarks;
-    List<string> myList = new List<string>();
+    public List<string> myList = new List<string>();
 
     // Start is called before the first frame update
     void Start()
