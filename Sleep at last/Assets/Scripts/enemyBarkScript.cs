@@ -7,6 +7,8 @@ public class enemyBarkScript : MonoBehaviour
     //barks are dialogue spoken by enemies when chasing the player
     public string[] enemyBarks;
 
+    public int barkNumManager;
+
     void Start()
     {
         //sizing the bark array, adding dialogue
@@ -27,5 +29,43 @@ public class enemyBarkScript : MonoBehaviour
         Debug.Log(enemyBarks[2]);
         Debug.Log(enemyBarks[3]);
         Debug.Log(enemyBarks[4]);
+        showBarkText();
+    }
+
+    //can be accessed by enemy/player script to show on canvas
+    public void showBarkText()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            //replace this if statement by distance between enemy and player
+            barkNumManager = Random.Range(0, 4);
+            Debug.Log(barkNumManager);
+        }
+
+        if(barkNumManager == 0)
+        {
+
+        }
+
+        if (barkNumManager == 1)
+        {
+
+        }
+
+        if (barkNumManager == 2)
+        {
+
+        }
+
+        if (barkNumManager == 3)
+        {
+
+        }
+
+        if (barkNumManager == 4)
+        {
+
+        }
+
     }
 }
