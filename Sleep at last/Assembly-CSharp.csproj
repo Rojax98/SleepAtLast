@@ -62,7 +62,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\FlatKit\Scripts\UvScroller.cs" />
     <Compile Include="Assets\Scripts\enemyController.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>J:/UNITY/GAME/SleepAtLast/Sleep at last/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
