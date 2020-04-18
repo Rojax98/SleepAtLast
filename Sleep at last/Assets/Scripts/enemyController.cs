@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class enemyController : MonoBehaviour
 {
-    Rigidbody rb;
+
     GameObject Player;
 
     public Light MainLight;
@@ -16,8 +16,6 @@ public class enemyController : MonoBehaviour
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
-
-        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -32,22 +30,9 @@ public class enemyController : MonoBehaviour
     void InLight()
     {
 
-        for (int i = 0; i < Lights.Count; i++)
-        {
 
-            float dis = Lights[i].GetComponent<Light>().range;
 
-            if(Vector3.Distance(transform.position, Lights[i].transform.position) < dis)
-            {
 
-                rb.velocity = Vector3.zero;
-
-            }
-            else
-            {
-                FollowPlayer();
-            }
-        }
     }
 
     void FollowPlayer()
