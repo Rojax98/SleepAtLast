@@ -1,5 +1,13 @@
 {
-	"process_id" : 5772,
+<<<<<<< HEAD
+<<<<<<< HEAD
+	"process_id" : 18936,
+=======
+	"process_id" : 14788,
+>>>>>>> a3fa94eeb6ebb0cb408bc312fa2c9631c22df7b1
+=======
+	"process_id" : 14788,
+>>>>>>> e1037f1e03a347b1ebb079b62d4548ae124c7150
 	"version" : "2019.2.12f1",
 	"app_path" : "C:/Program Files/Unity/Hub/Editor/2019.2.12f1/Editor/Unity.exe",
 	"app_contents_path" : "C:/Program Files/Unity/Hub/Editor/2019.2.12f1/Editor/Data"
