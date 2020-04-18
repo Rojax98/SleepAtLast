@@ -34,6 +34,7 @@ public class enemyController : MonoBehaviour
     void InLight()
     {
 
+        transform.rotation = Quaternion.LookRotation(Player.transform.position);
 
         for (int i = 0; i < Lights.Count; i++)
         {
@@ -43,7 +44,8 @@ public class enemyController : MonoBehaviour
             if(Vector3.Distance(transform.position, Lights[i].transform.position) < dis)
             {
 
-                rb.velocity = Vector3.zero;
+                rb.velocity = 0;
+
                
             }
             else
@@ -60,7 +62,14 @@ public class enemyController : MonoBehaviour
     void FollowPlayer()
     {
 
-        rb.velocity = Vector3.Lerp(transform.position, Player.transform.position, 1);
+        if (Vector3.Distance(transform.position, Player.transform.position) > 1)
+        {
+            rb.transform.position = Vector3.Lerp(transform.position, Player.transform.position, 0.01f);
+        }
+        else
+        {
+            rb.velocity = Vector3.zero;
+        }
 
     }
 
