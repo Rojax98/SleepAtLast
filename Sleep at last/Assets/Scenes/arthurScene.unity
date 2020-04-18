@@ -163,7 +163,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57668032eab93f04780723cfc3c80654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyBarks: []
+  enemyBarks:
+  - '"I can smell you."'
+  - '"Help me, it hurts."'
+  - '"Precious light..."'
+  - '"You cannot escape."'
+  - '"Surrender it to me!"'
+  myList: []
 --- !u!1 &1301651410
 GameObject:
   m_ObjectHideFlags: 0
